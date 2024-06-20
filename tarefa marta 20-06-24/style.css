@@ -1,0 +1,153 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cor de fundo do corpo da página */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Estilização do logotipo */
+.logo span {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #08334d;
+   
+}
+
+/* Estilização da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration:center;
+    color: #c58700;
+    font-size: 26px;
+   
+}
+
+/* Seção principal (Hero) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #035f7a;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(7, 7, 7, 0.1);
+}
+
+/* Texto da Hero */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Botão do WhatsApp */
+.btn-whatsapp {
+    background-color: #0d8338;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Imagem da Hero */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #909790;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+}
+
+footer span {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+}
+
+footer span:first-child {
+    margin-bottom: 5px;
+    color: #000000;
+    background-color: #035ea8a6;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJ Security - Treinamentos</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilos do conteúdo */
+        main {
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Estilos da seção de treinamentos */
+        .treinamentos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .treinamento {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            max-width: 300px;
+            min-width: 300px; /* Garante que cada treinamento tenha largura mínima */
+        }
+
+        .treinamento img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .treinamento h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .treinamento p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .treinamento a {
+            display: inline-block;
+            background-color: #00b050;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .treinamento a:hover {
+            background-color: #008040;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .treinamentos {
+                flex-direction: column;
+            }
+
+            .treinamento {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="https://th.bing.com/th/id/R.f823bbec973c25bc58103b7bdc7f9ab2?rik=oBEFpiZbcK3ILg&pid=ImgRaw&r=0" class="logo">TJ Security</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Treinamentos TJ Security</h1>
+            <div class="treinamentos">
+                <!-- Treinamento 1 -->
+                <div class="treinamento">
+                    <img src="seguranca.jfif" alt="Treinamento de Segurança da Informação"  width="300px" height="300">
+                    <h2>Segurança da Informação</h2>
+                    <p>Aprenda os fundamentos da segurança da informação, incluindo análise de riscos, políticas de segurança, gestão de identidade e acesso, e muito mais.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <!-- Treinamento 2 -->
+                <div class="treinamento">
+                    <img src="redes.jfif" alt="Treinamento de Segurança de Redes"  width="300px" height="300">
+                    <h2>Segurança de Redes</h2>
+                    <p>Domine as melhores práticas para proteger sua rede contra ataques, incluindo firewalls, VPNs, detecção de intrusão e análise de tráfego.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <!-- Treinamento 3 -->
+                <div class="treinamento">
+                    <img src="app.jfif" alt="Treinamento de Segurança de Aplicações"  width="300px" height="300">
+                    <h2>Segurança de Aplicações</h2>
+                    <p>Aprenda a desenvolver aplicações web seguras, incluindo técnicas de codificação segura, autenticação e autorização, e prevenção de injeção de SQL.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <!-- Treinamento 4 -->
+                <div class="treinamento">
+                    <img src="dados.jfif" alt="Treinamento de Segurança de Dados"  width="300px" height="300">
+                    <h2>Segurança de Dados</h2>
+                    <p>Conheça os principais conceitos e práticas para proteger seus dados confidenciais, incluindo criptografia, backup e recuperação de desastres.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <!-- Treinamento 4 -->
+                <div class="treinamento">
+                    <img src="dados.jfif" alt="Treinamento de Segurança de Dados"  width="300px" height="300">
+                    <h2>Segurança de Dados</h2>
+                    <p>Conheça os principais conceitos e práticas para proteger seus dados confidenciais, incluindo criptografia, backup e recuperação de desastres.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <!-- Treinamento 4 -->
+                <div class="treinamento">
+                    <img src="dados.jfif" alt="Treinamento de Segurança de Dados" width="300px" height="300">
+                    <h2>Segurança de Dados</h2>
+                    <p>Conheça os principais conceitos e práticas para proteger seus dados confidenciais, incluindo criptografia, backup e recuperação de desastres.</p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 TJ Security</p>
+        </div>
+    </footer>
+</body>
+</html>
