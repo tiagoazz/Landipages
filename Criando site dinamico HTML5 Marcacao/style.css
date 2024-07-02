@@ -1,0 +1,262 @@
+/* Reset básico para remover margem e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão e a cor de fundo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o contêiner centralizado */
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: #030b80;
+    color: #dedede;
+    padding: 40px 0;
+}
+
+/* Estilo para a logomarca */
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para o menu de navegação na área de trabalho */
+nav.desktop {
+    float: right;
+}
+
+/* Estilo para a lista de navegação */
+nav.desktop ul {
+    list-style: none;
+}
+
+/* Estilo para os itens da lista de navegação */
+nav.desktop ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Estilo para os links da navegação */
+nav.desktop ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilo para o menu de navegação no celular */
+nav.mobile {
+    display: none;
+}
+
+/* Estilo para a seção principal do banner */
+.banner-principal {
+    background: url('img/banner.jpg') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o formulário dentro do banner */
+.banner-principal form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para o título do formulário */
+.banner-principal form h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o campo de entrada do email */
+.banner-principal form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Compensar o padding */
+}
+
+/* Estilo para o botão de submissão */
+.banner-principal form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilo para a seção de descrição do autor */
+.descricao-autor {
+    padding: 40px 0;
+    background: #fff;
+}
+
+/* Estilo para as seções de 50% de largura */
+.w50 {
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+}
+
+/* Estilo para o título da descrição do autor */
+.descricao-autor h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para a imagem na descrição do autor */
+.descricao-autor img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Estilo para a seção de especialidades */
+.especialidades {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+/* Estilo para o título das especialidades */
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Estilo para as caixas de especialidade */
+.box-especialidade {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    margin: 0 1.5%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo para o ícone dentro das especialidades */
+.box-especialidade h3 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+/* Estilo para a seção de extras */
+.extras {
+    padding: 40px 0;
+    background: #fff;
+}
+
+/* Estilo para os depoimentos e serviços */
+.depoimento-single, .servicos ul {
+    margin-bottom: 20px;
+}
+
+/* Estilo para a descrição dos depoimentos */
+.depoimento-descricao {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o nome do autor do depoimento */
+.nome-autor {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Estilo para a lista de serviços */
+.servicos ul {
+    list-style: none;
+}
+
+/* Estilo para os itens da lista de serviços */
+.servicos ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Estilo para o ícone do item da lista de serviços */
+.servicos ul li::before {
+    content: '✔';
+    color: #ff6600;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Estilo para limpar o float */
+.clear {
+    clear: both;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade: para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Alterar o estilo do logo para centralizado */
+    .logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Alterar o menu de navegação para sumir na área de trabalho e aparecer no celular */
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+        text-align: center;
+    }
+
+    nav.mobile ul {
+        list-style: none;
+    }
+
+    nav.mobile ul li {
+        margin: 10px 0;
+    }
+
+    nav.mobile ul li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* Alterar a largura das seções para 100% */
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Alterar a largura das caixas de especialidade para 100% */
+    .box-especialidade {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
